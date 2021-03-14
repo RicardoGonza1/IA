@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>IA</title>
+	<title>Ringa Tech - Red neuronal</title>
 	<style type="text/css">
 		#sitio {
 			padding: 5rem;
@@ -36,13 +36,13 @@
 		//texto blanco, o texto negro segun el fondo
 		network.train([
 			//Fondo negro (entrada en 0s) = texto blanco (salida = 1)
-			{input: {rojo: 0, verde: 0, azul: 0}, output: {color: 0}},
+			{input: {rojo: 0, verde: 0, azul: 0}, output: {color: 1}},
 			//Fondo blanco (entrada en 1s) = texto negro (salida = 0)
-			{input: {rojo: 1, verde: 1, azul: 1}, output: {color: 1}},
+			{input: {rojo: 1, verde: 1, azul: 1}, output: {color: 0}},
 			//Fondo verde, texto negro
-			{input: {rojo: 0, verde: 1, azul: 0}, output: {color: 1}},
+			{input: {rojo: 0, verde: 1, azul: 0}, output: {color: 0}},
 			//Fondo azul, texto blanco
-			{input: {rojo: 0, verde: .43, azul: 1}, output: {color: 0}},
+			{input: {rojo: 0, verde: .43, azul: 1}, output: {color: 1}},
 			//Fondo rojo, texto blanco
 			{input: {rojo: 1, verde: 0, azul: 0}, output: {color: 1}},
 		]);
